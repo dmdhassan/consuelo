@@ -1,0 +1,56 @@
+
+
+
+img {
+    max-width: 100%;
+}
+.container {
+    padding-inline: 10%;
+}
+
+.logo {
+    color: #28a7e9;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-white {
+    color: #FFF;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* position: fixed;
+    inset: 0; */
+    
+}
+
+.nav-links {
+    list-style-type: none;
+    display: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+}
+
+.hero {
+    background-image: url(/images/home-bg.jpeg);
+    padding-block: 5%;
+}
+
+
+
+
+
+@media (min-width: 1200px) {
+    .nav-links {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+    }
+}

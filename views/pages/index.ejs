@@ -3,30 +3,42 @@
 <head>
   <%- include('../partials/head') %>
 </head>
-<body class="container">
+<body class="">
 
 <header>
   <%- include('../partials/header'); %>
 </header>
 
 <main>
-  <div class="jumbotron">
-    <h1>This is great</h1>
-    <p>Welcome to Consuelo Home Page</p>
 
-    <h2>Our Software Engineering Team</h2>
-    <p><%= tagline %></p>
-    <ul>
-      <% teamMembers.forEach(member => { %>
-        <li>
-          <strong><%= member.name %> </strong> is peresenting <%= member.organization %> as a <%- member.role %> 
-        </li>
-      <% }) %>
-    </ul>
+  <div class="hero">
+    <div class="container text-center text-white">
+      <div>
+        <h1>Software Landing Page</h1>
+        <p>This is a fully Responsive, Clean Design, Modern and Flexible Software Landing Page for startup business and agencies. It is built with Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non quia eos a unde autem similique molestiae excepturi sed nobis placeat laboriosam, quasi tenetur quaerat!</p>
+      </div>
+      <div>
+        <img src="/images/small-laptop.png">
+      </div>
+    </div>
   </div>
+
+  <div class="container" id="features">
+    <%- include('../partials/features'); %>
+  </div>
+  <div class="container" id="pricing">
+    <%- include('../partials/pricing'); %>
+  </div>
+  <div class="container" id="download">
+    <%- include('../partials/download'); %>
+  </div>
+  <div class="container" id="contact">
+    <%- include('../partials/contact'); %>
+  </div>
+  
 </main>
 
-<footer>
+<footer class="container text-center">
   <%- include('../partials/footer') %>
 </footer>
 
