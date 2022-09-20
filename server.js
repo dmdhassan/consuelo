@@ -4,6 +4,7 @@ const PORT = process.env.PORT || 8080;
 
 // set the view engine to ejs
 app.set('view engine', 'ejs');
+app.use(express.static('public'))
 
 // use res.render to load up an ejs view file
 
