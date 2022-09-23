@@ -1,4 +1,6 @@
-
+*, *::before, *::after{
+    box-sizing: border-box;
+}
 
 
 img {
@@ -44,13 +46,80 @@ img {
 }
 
 
+/* Pricing style */
+#pricing{
+    background-color: rgba(128, 128, 128, 0.059);
+    width: 100%;
+    padding-bottom: 3rem;
+}
+.sec-head{
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 3.5rem 0;
+    margin: 0;
+}
+.price-container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 2rem;
+    width: 75%;
+    margin: 0 auto;
+}
+.price-list{
+    padding: 0rem;
+    text-align: center;
+}
+.price-top{
+    background-color: #279ddd;
+    width: 100%;
+    padding: 1.5rem 3.5rem 1rem 3.5rem;
+    line-height: 2;
+    font-weight: 700;
+    font-size: 15px;
+    color: #FFF;
+}
+.small-size{
+    font-size: 12px;
+}
+.price-top p{
+    margin: 0;
+}
+.price-body{
+    padding: 0rem 3.5rem 1.5rem 3.5rem;
+    line-height: 2;
+    font-size: 14px;
+    color: rgba(128, 128, 128, 0.851);
+    background-color: #FFF;
+}
 
-
+.price-button{
+    margin-top: 1rem;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid #279ddd;
+    padding: 0.5rem 2.4rem;
+    background-color: transparent;
+    font-size: 12px;
+    font-weight: 700;
+    color: #279ddd;
+}
+.price-button:hover{
+    background-color: #279ddd;
+    color: #FFF
+}
 
 @media (min-width: 1200px) {
     .nav-links {
         display: flex;
         justify-content: space-between;
         gap: 10px;
+    }
+}
+
+@media (min-width: 1382px) {
+    .price-list-2{
+        position: relative;
+        bottom: 2rem;
     }
 }
