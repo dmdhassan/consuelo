@@ -123,3 +123,31 @@ img {
         bottom: 2rem;
     }
 }
+/*DOWNLOAD*/
+.download-container{
+    display: flex;
+    flex-flow: row wrap;
+    padding-top: 20px;
+}
+
+.download-text{
+    width: 50%;
+    line-height: 32px;
+}
+.download-img{
+    width: 50%;
+}
+
+.download-btn{
+    background-color: blue;
+    color: #FFF;
+    padding: 10px;
+    border: none;
+    width: 190px;
+}
+
+.download-btn:hover{
+    border: 2px solid blue;
+    background-color: transparent;
+    color: blue;
+}
